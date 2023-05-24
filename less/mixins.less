@@ -1,6 +1,18 @@
 // Mixins acá
-.btn{
-    display: block;
+.flex(@direction,@justify){
+    display: flex;
+    flex-direction: @direction;
+    align-items: center;
+    justify-content: @justify;
+}
+
+.imagen{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.boton{
+    display: inline-block;
     width: max-content;
     padding: 10px;
     border-radius: 5px;
@@ -8,7 +20,7 @@
 }
 
 .btn-color(@fondo; @text-color){
-    .btn();
+    .boton();
     background-color: @fondo;
     color: @text-color
 }

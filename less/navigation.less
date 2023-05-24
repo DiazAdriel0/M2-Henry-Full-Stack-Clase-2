@@ -1,17 +1,26 @@
 // Código de Nav acá
 .nav{
+    .flex(column,center);
     background-color: @nav-bg;
+    border: 1px solid @nav-border;
     text-align: center;
     padding: 20px;
     width: 100%;
+    h1{
+        font-size: xx-large;
+        text-align: center;
+    }
     ul{
-        display: flex;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        .flex(row,space-around);
         padding-top: 20px;
         font-size: 1.5rem;
         font-weight: bold;
         justify-content: center;
         li{
+            a{
+                text-decoration: none;
+                color: @river-bend;
+            }
             margin: 0 10px;
         }
     }
